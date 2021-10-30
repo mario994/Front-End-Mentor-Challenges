@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/pattern-background-desktop.svg), #b8bdff;
+    background-repeat: no-repeat;
+}
+
+.card {
+    max-width: 300px;
+    padding: 210px 40px 30px 40px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    overflow: hidden;
+    position: relative;
+}
+
+.container-img img{
+    max-width: 100%; 
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card h2 {
+    font-size: 25px;
+    color: #000033;
+}
+
+.card p {
+    font-size: 15px;
+    color: #838383;
+}
+
+.container-payment {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #f5fafe;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.container-payment div .title{
+    font-size: 16px;
+    font-weight: 700;
+    color: #000033;
+}
+
+.container-payment p {
+    line-height: 0.6; 
+}
+
+.container-payment a {
+    font-weight: 600;
+    color: #382ae1;
+    transition: 0.4s;
+}
+
+.container-payment a:hover {
+    color: #8189f5;
+}
+
+.card button {
+    color: #ffffff;   
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #382ae1;
+    display:  block;
+    width: 100%; 
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card button:hover{
+    background-color: #6257e8;
+}
+
+.cancel {
+    font-weight: 600;
+    color: #8178ed;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.cancel:hover {
+    color: #000033;
+}
+
+@media screen and (max-width: 340px) {
+    .card {
+        padding-top: 180px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .card {
+        padding-top: 150px;
+    }
+
+    .container-payment {
+        display: block;
+    }
+}
+
